@@ -1,0 +1,24 @@
+<form>
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="enter username"><br><br>
+    <input type="password" name="password" placeholder="enter password"><br><br>
+    <input type="submit" value="sign in" formaction="/loginapp/login/" formmethod="post"><br><br>
+    <input type="submit" value="sign up" formaction="/loginapp/saveUser/" formmethod="get">
+
+</form>
+<span style="color:red;">{{message}}</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
